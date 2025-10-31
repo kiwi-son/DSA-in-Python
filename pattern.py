@@ -58,3 +58,15 @@ def tri(n):
         print("\n",end="")
 print(tri(n))
 
+"""
+1
+2 2
+3 3 3
+4 4 4 4
+"""
+def num_tri(n):
+    for i in range(1,n+1):
+        for j in range(1,i+1):
+            print(i," ",end="")
+        print("\n",end="")
+num_tri(n)
