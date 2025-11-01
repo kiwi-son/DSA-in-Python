@@ -28,6 +28,7 @@ n=int(input("Enter the number"))
 square_pattern(n)
 square_char(n)
 
+
 """
 1 2 3
 4 5 6
@@ -56,7 +57,7 @@ def tri(n):
         for j in range(1,i+1):
             print("* ",end="")
         print("\n",end="")
-print(tri(n))
+tri(n)
 
 """
 1
@@ -100,6 +101,12 @@ def rev_tri(n):
 
 rev_tri(n)
 
+"""
+1
+2  3
+4  5  6
+7  8  9  10
+"""
 def floyed_tri(n):
     x=0
     for i in range(n):
@@ -110,6 +117,12 @@ def floyed_tri(n):
 
 floyed_tri(n)
 
+"""
+1  1  1  1
+   2  2  2
+      3  3
+         4
+"""
 def invert(n):
     for i in range(1,n+1):
         for k in range(i-1):
@@ -119,3 +132,23 @@ def invert(n):
         print("\n",end="")
 
 invert(n)
+
+
+"""
+   1
+  121
+ 12321
+1234321
+"""
+def pyramid(n):
+    for i in range(1,n+1):
+        for j in range(0,n-i):
+            print(" ",end="")
+        for k in range(1,i+1):
+            print(k,end="")
+        for l in range(i-1,0,-1):
+            print(l,end="")
+        print("\n",end="")
+
+pyramid(n)
+
